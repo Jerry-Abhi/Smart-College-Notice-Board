@@ -48,6 +48,12 @@ Project Objective
 **
 The primary objective of this project is to create a digital notice management system that streamlines the process of sharing information within educational institutions. By providing a modern and centralized platform, the system helps ensure that students never miss important announcements, deadlines, or events.
 
+# Smart College Notice Board
+
+## Preview
+
+![Smart College Notice Board](Screenshot%202026-06-14%20120037.png)
+
 ##Author
 
 Abhishek Anand
