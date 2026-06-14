@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart College Notice Reminder</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Modern Typography: Outfit for headings, Inter for body -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Animated Background Shapes -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <header class="header glass-panel">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon-wrap">
+                    <span class="logo-icon">🔔</span>
+                </div>
+                <h1>SmartNotice</h1>
+            </div>
+            <button id="themeToggle" class="theme-btn" aria-label="Toggle Dark Mode">
+                <span class="icon-light">☀️</span>
+                <span class="icon-dark" style="display:none;">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Notice Creation Section -->
+        <section class="creation-section">
+            <div class="card form-card glass-panel fade-in">
+                <h2>Add New Notice</h2>
+                <form id="noticeForm">
+                    <div class="form-group input-wrapper">
+                        <label for="noticeTitle">Notice Title</label>
+                        <input type="text" id="noticeTitle" placeholder="e.g., Final Year Project Submission" required>
+                    </div>
+
+                    <div class="form-group input-wrapper">
+                        <label for="noticeDescription">Description</label>
+                        <textarea id="noticeDescription" rows="4" placeholder="Brief details about the notice..."
+                            required></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group input-wrapper half">
+                            <label for="deadlineDate">Deadline Date</label>
+                            <input type="date" id="deadlineDate" required>
+                        </div>
+
+                        <div class="form-group input-wrapper half">
+                            <label for="priorityLevel">Priority Level</label>
+                            <select id="priorityLevel" required>
+                                <option value="" disabled selected>Select priority...</option>
+                                <option value="low">Low Priority</option>
+                                <option value="medium">Medium Priority</option>
+                                <option value="high">High Priority</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn" id="addBtn">Add Notice</button>
+                        <button type="button" class="cancel-btn" id="cancelEditBtn"
+                            style="display: none;">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Notice Dashboard Section -->
+        <section class="dashboard-section">
+            <div class="dashboard-header fade-in" style="animation-delay: 0.1s;">
+                <div class="header-titles">
+                    <h2>Notices Board</h2>
+                    <p class="institute-name">Jerry Institute of Technology</p>
+                </div>
+                <div class="stats">
+                    <span id="totalNotices">0</span> Active
+                </div>
+            </div>
+
+            <div id="noticeContainer" class="notice-grid">
+                <!-- Dynamically injected via JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Auth Footer -->
+    <footer class="auth-footer glass-panel">
+        <div class="auth-container">
+            <p>New to SmartNotice?</p>
+            <div class="auth-buttons">
+                <a href="#" class="btn-login">Log In</a>
+                <a href="#" class="btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
