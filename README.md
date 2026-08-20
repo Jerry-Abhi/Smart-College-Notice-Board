@@ -54,6 +54,6 @@ The primary objective of this project is to create a digital notice management s
 
 ![Smart College Notice Board](Screenshot%202026-06-14%20120037.png)
 
-##Author
+Author
 
 Abhishek Anand
