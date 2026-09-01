@@ -1,4 +1,10 @@
 Smart College Notice Board
+
+
+## Preview
+
+![Smart College Notice Board](NoticeBoard.png)
+
 ##Overview**
 
 Smart College Notice Board is a web-based application designed to simplify the process of managing and sharing college notices. It provides a centralized platform where administrators can post important announcements, academic updates, event details, and assignment deadlines. Students can easily access all notices in one place without relying on traditional notice boards.
